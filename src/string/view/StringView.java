@@ -51,6 +51,7 @@ public class StringView
 	{
 		// you will need to call your methods in here
 
+		
 		testSubString();
 		testCasing();
 		testGetBytes();
@@ -74,11 +75,12 @@ public class StringView
 		JOptionPane.showMessageDialog(null, firstLetter.toLowerCase()
 				+ afterFirstLetter + " is now all lowercase");
 		fullWord = firstLetter.toUpperCase() + afterFirstLetter;
-
+		
 	}
-
+	
 	private void testGetBytes()
 	{
+		//fullWord = JOptionPane.showInputDialog("type in something");
 		JOptionPane.showMessageDialog(null, "lets turn " + fullWord
 				+ " into bytes");
 		byte[] myBytes;
@@ -89,9 +91,11 @@ public class StringView
 		for (int count = 0; count < myBytes.length; count++)
 		{
 			temp += myBytes[count];
+			
 
 		}
 		JOptionPane.showMessageDialog(null, temp);
+		System.out.print(temp);
 		JOptionPane.showMessageDialog(null, "well now you know");
 	}
 
